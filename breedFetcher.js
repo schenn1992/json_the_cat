@@ -2,7 +2,7 @@ const request = require('request');
 
 const breed = process.argv[2];
 
-const URL = `https://api.thecatapi.com/v1/breeds/search?q=${breed}`
+const URL = `https://api.thecatapi.com/v1/breeds/search?q=${breed}`;
 
 request(URL, (error, response, body) => {
   if (error) {
